@@ -148,7 +148,7 @@ header {
   }
 
   .Shapes {
-    margin-top: 10px;
+    margin-top: 15px;
     position: static;
   }
 
@@ -157,6 +157,7 @@ header {
   }
 
   .group-des h2 {
+    font-size: 15px;
     width: 100%;
   }
 

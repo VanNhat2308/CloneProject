@@ -297,4 +297,20 @@ margin-bottom: 10px;
     header{
         height: auto;
     }
+    .cus-header{
+        font-size: 18px;
+      }
+      .item-content p{
+        font-size: 12px;
+      }
+      .item{
+        padding: 5px 5px;
+        width: 80%;
+      }
+    .question{
+        font-size: 12px;
+      }
+      .answer{
+        font-size: 10px;
+      }
 }
