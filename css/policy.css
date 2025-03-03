@@ -1,0 +1,36 @@
+.wrapper-content{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+.content{
+    width: 50%;
+}
+.content h3{
+    font-weight: 400;
+    font-size: 16px;
+    margin: 20px 0;
+}
+.content h2{
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.content li{
+    color: #5B5B5B;
+    font-size: 14px;
+}
+.content ul{
+    margin: 20px  0;
+}
+header{
+    height: 10vh;
+background: #fff;
+}
+header .btn-clone{
+    background: inherit;
+}
+.PolicyTitle{
+    font-size: 45px;
+    font-weight: 600;
+}

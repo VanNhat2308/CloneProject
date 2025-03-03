@@ -1,0 +1,192 @@
+.subtext-header {
+  width: 50rem;
+}
+
+.wrapper_header {
+  margin-top: 35px;
+}
+
+header {
+  height: 45vh;
+}
+
+.header_group {
+  position: relative;
+}
+
+.Shapes {
+  position: absolute;
+  top: 130px;
+  right: 120px;
+}
+
+.content {
+  width: 80%;
+}
+
+.wrapper-content {
+  margin-top: 180px;
+  display: flex;
+  justify-content: center;
+}
+
+.img-about {
+  width: 100%;
+  height: auto;
+}
+
+.subtext-about {
+  margin: 25px 0;
+}
+
+.wrap-img-about {
+  position: relative;
+  margin-bottom: 100px;
+}
+
+.box-blue-about {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  background-color: #232ED1;
+  border-radius: 0 0 15px 0;
+  right: 96px;
+  bottom: -25px;
+}
+
+.box-orange-about {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: #F24C27;
+  border-radius: 15px 0 0 0;
+  right: 60px;
+  bottom: -70px;
+}
+
+.description-about {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.group-des {
+  width: 100%;
+}
+
+.container {
+  margin-top: 70px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 15px;
+  width: 100%;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+.item:first-child {
+  display: inline-block;
+  grid-row: span 3;
+}
+
+.img-item-about {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.position {
+  font-weight: 600;
+  color: #232ED1;
+  margin-bottom: 5px;
+}
+
+.name {
+  margin-bottom: 20px;
+  color: black;
+}
+
+.item a {
+  margin-right: 30px;
+}
+
+.insta {
+  margin-top: 3px;
+}
+
+/* responsive */
+
+@media screen and (max-width: 780px) {
+  header {
+    height: auto;
+  }
+
+  .subtext-header {
+    width: 100%;
+  }
+
+  .content {
+    margin-top: 10px;
+  }
+
+  .wrapper-header {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .lables__header {
+    width: 26rem;
+  }
+
+  .image-content img {
+    margin-top: 20px;
+  }
+
+  .Shapes {
+    margin-top: 10px;
+    position: static;
+  }
+
+  .wrapper-content {
+    margin-top: 5px;
+  }
+
+  .group-des h2 {
+    width: 100%;
+  }
+
+  .box-blue-about {
+    display: none;
+  }
+
+  .box-orange-about {
+    display: none;
+  }
+
+  .wrap-img-about {
+    margin-bottom: 20px;
+  }
+
+  .description-about {
+    text-align: left;
+  }
+
+  .group-des {
+    width: 100%;
+  }
+
+  .item:first-child {
+    grid-row: auto;
+  }
+
+  .container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+
+}

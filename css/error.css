@@ -1,0 +1,26 @@
+.btn-back{
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #F24C27;
+    margin-top: 10px;
+}
+.text-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.wrapper-header{
+    display: flex;
+    justify-content: center;
+}
+.text-content a{
+text-decoration: none;
+color: white;
+}
+h3{
+    margin: 10px 0;
+}
+header{
+    height: 100vh;
+}
