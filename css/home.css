@@ -2,8 +2,8 @@
 
 .container {
   display: flex;
-  justify-content: center;
-
+  flex-direction: column;
+justify-content: center;
 
 }
 
@@ -12,7 +12,7 @@
 }
 
 .content {
-  width: 80%;
+  width: 90%;
 }
 
 .btn-primary {
@@ -35,8 +35,6 @@
   margin-top: 70px;
   display: flex;
 }
-
-
 
 
 
@@ -301,8 +299,66 @@
   line-height: 1.4;
   margin-top: 1rem;
 }
+.whyBox{
+  display: flex;
+  margin-top: 20px;
+}
 
 
+.wrap-whyBox{
+  display: flex;
+  flex-direction: column;
+  margin-right: 30px;
+}
+.whyBox-item{
+  background: linear-gradient(45deg,rgba(35, 46, 209, 0.2), rgba(182, 186, 255, 0.1));
+  padding: 10px;
+  width: 260px;
+  height: 260px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  color: var(--secondary-color);
+
+}
+.whyBox-item img, .whyBox-item h3{
+  margin-left: 20px;
+}
+.whyBox-item img{
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+.wrap-whyBox.right{
+  margin-top: -20px;
+}
+.whyBox-item.mark{
+  background: linear-gradient(45deg,rgba(242, 76, 39, 0.2), rgba(255, 217, 208, 0.1));
+  color: rgba(242, 76, 39, 1);
+
+}
+.section3{
+  position: relative;
+  width: 100%;
+  margin-bottom: 150px;
+}
+.text-group-s3{
+  position: absolute;
+  right: 0px;
+  bottom: -23%;
+  width: 72%;
+  background: rgba(35, 46, 209, 1);
+  padding: 10rem;
+  border-top-left-radius: 15px;
+  color: white;
+  display:flex;
+  align-items: center;
+}
+.title-s3 {
+width: 30%;
+margin-right: 60px;
+}
+.des-s3 {
+width: 60%;
+}
 
 
 
@@ -315,11 +371,42 @@
     height: auto;
     padding-bottom: 20px;
   }
-
-
-  .section3 {
-    padding-bottom: 10px;
+  .title-s3 {
+    width: 90%;
+    text-align: center;
+    margin: 0;
+    }
+    .des-s3 {
+      text-align: center;
+      margin-top: 10px;
+    width: 90%;
+    }
+  .text-group-s3{
+    flex-direction: column;
+    padding: 20px;
+    position: static;
+    width: 100%;
   }
+  .whyBox-item img{
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  .whyBox{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .whyBox-item{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    width: 90%;
+    height:90%;
+  }
+  .wrap-whyBox.right{
+    margin-top: 0px;
+  }
+
 
   .group-box-feature {
     margin-top: 10px;
@@ -353,6 +440,10 @@
   .box-content {
     flex-direction: column;
     align-items: flex-start;
+    width: 100%;
+  }
+  .section2{
+    width: 100%;
   }
 
   .text-group-s2 {

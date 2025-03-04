@@ -73,6 +73,12 @@ header {
   font-weight: var(--fw-medium);
   line-height: clamp(1.2em, 2.8vw, 1.35em);
 }
+.font-medium-bold {
+  font-size: clamp(2rem, 3.5vw, var(--fs-medium));
+  font-weight: var(--fw-bold);
+  line-height: clamp(1.2em, 2.8vw, 1.35em);
+}
+
 
 .font-medium-down {
   font-size: clamp(1.8rem, 3vw, var(--fs-medium-down));

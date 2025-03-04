@@ -1,4 +1,4 @@
-
+@import 'all.css';
 .even{
   margin-right: 20px;
 }
@@ -112,10 +112,30 @@ margin-left: 17px;
   margin-top: 5px;
 }
 
+.wrap-last-el{
+  position: relative;
+}
 
-
-
-
+.box-text-el{
+  position: absolute;
+  bottom: -60px;
+  right: 0;
+  width: 505px;
+  padding: 60px;
+  background: rgba(242, 76, 39, 1);
+  border-top-left-radius: 100px;
+  color: white;
+  }
+  
+  .box-blue-el{
+    width: 48px;
+    height: 48px;
+    background:#232ED1;
+    position: absolute;
+    bottom:29%;
+    right:3%;
+    border-bottom-left-radius: 20px;
+  }
 /* responsive */
 @media screen and (max-width: 1224px){
     header{
