@@ -1,12 +1,15 @@
 @import "all.css";
 
 .container {
+  width: 100%;
   display: flex;
   flex-direction: column;
-justify-content: center;
+align-items: center;
 
 }
-
+.logo-group-s2 img{
+  width: 100%;
+}
 .wrap-footer {
   margin-top: 160px;
 }
@@ -142,20 +145,28 @@ justify-content: center;
 .feature1-s4 {
   display: flex;
   margin-top: 60px;
-  width: 1100px;
+  width: 100%;
 
 
 }
 
 .feature1-img {
   width: 40%;
-  margin-right: 40px;
+  margin-right: 100px;
+}
+.feature1-img.even{
+  width: 40%;
+  margin-right: 0px;
+}
+.feature1-des-s4.even{
+  margin-right: 100px;
 }
 
 .feature1-des-s4 {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 40%;
 }
 
 .t1-s4 {
@@ -178,8 +189,8 @@ justify-content: center;
 /* end */
 
 
-.cus-header {
-  margin-top: 70px;
+.customer-comment {
+  margin-top: 60px;
 }
 
 .title-saq {
@@ -258,10 +269,11 @@ justify-content: center;
 }
 
 .item {
-  background: rgb(211, 213, 245);
+  background: linear-gradient(45deg,rgba(35, 46, 209, 0.2), rgba(182, 186, 255, 0.1));
   border-radius: 10px;
-  padding: 1.5rem;
+  padding: 2rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-right: 20px;
 }
 
 
