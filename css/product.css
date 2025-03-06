@@ -53,32 +53,40 @@
   display: flex;
   justify-content: space-between;
 }
-/* .box h2,h3{
-    margin-top: 15px;
-} */
 
-.group-box-feature{
+.group-box-feature {
   width: 100%;
-  margin-top: 60px;
+  margin-top: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.feature1-s1{
+
+.feature1-s1 {
   display: flex;
   margin-top: 60px;
-  width: 1100px;
- 
-    
+  width: 100%;
+  justify-content: space-between;
+
+
 }
-.feature1-img{
-    width: 40%;
-    margin-right: 40px;
+
+.feature1-img {
+  width: 50%;
 }
-.feature1-des-s1{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.feature1-img.even{
+  width: 50%;
+  margin-right: 0px;
+}
+.feature1-des-s1.even{
+  margin-right: 100px;
+}
+
+.feature1-des-s1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
 }
 .t1-s1{
     color: #232ED1;
@@ -105,7 +113,8 @@ color: #5B5B5B;
 margin-left: 17px;
 }
 .HappySection{
-    margin-top: 60px;
+  width: 80%;
+  margin-top: 100px;
 }
 
 .wrapBox{
@@ -118,8 +127,8 @@ margin-left: 17px;
 
 .box-text-el{
   position: absolute;
-  bottom: -60px;
-  right: 0;
+  bottom: -90px;
+  right: 0px;
   width: 505px;
   padding: 60px;
   background: rgba(242, 76, 39, 1);
@@ -132,12 +141,12 @@ margin-left: 17px;
     height: 48px;
     background:#232ED1;
     position: absolute;
-    bottom:29%;
-    right:3%;
+    bottom:33%;
+    right:10%;
     border-bottom-left-radius: 20px;
   }
 /* responsive */
-@media screen and (max-width: 1224px){
+/* @media screen and (max-width: 1224px){
     header{
         height: auto;
     }
@@ -209,4 +218,118 @@ margin-left: 17px;
 
 
  
+} */
+@media (max-width: 386px) {
+  .box-text-el h2{
+    font-size: 14px !important;
+  }
 }
+
+/* // X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+
+}
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+  .t1-s1{
+    font-size: 14px;
+  }
+ .t4-s1{
+  font-size: 14px;
+ }
+}
+
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+  .wrapper-header{
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  .text-content{
+    width: 100%;
+  }
+  .group-box{
+    flex-direction: column;
+  }
+  .group-box .box{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+.icon-box{
+  margin-right: 30px;
+}
+.wrapBox{
+  width: 100%;
+  
+}
+.box h3{
+  width: 100%;
+  margin-top: 0px;
+}
+.feature1-des-s1{
+  width: 100%;
+}
+.feature1-s1 {
+  width: 100%;
+  flex-direction: column;
+}
+
+.feature1-s1 img {
+  width: 100%;
+  height: auto;
+  margin-right: 0;
+  margin-top: 20px;
+}
+.feature1-img.even{
+  width: 100%;
+}
+.feature1-s1 {
+  width: 100%;
+  flex-direction: column;
+}
+
+.feature1-s1 img {
+  width: 100%;
+  height: auto;
+  margin-right: 0;
+  margin-top: 20px;
+}
+  .odd{
+    flex-direction: column-reverse;
+  }
+  .box-text-el{
+    margin-top: -5px;
+    position: static;
+    width: 100%;
+    border-top-left-radius: 0px;
+    padding: 30px;
+  }
+  .HappySection{
+    position: relative;
+    width: 100%;
+  }
+  .box-blue-el{
+    right: -20px;
+    bottom:-19px;
+  }
+  .t3-s1{
+    width: 100%;
+  }
+  .box-text-el h2{
+    font-size: 20px !important;
+  }
+}
+
+/* // Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+
+}
+
+/* // X-Large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {
+
+}
+

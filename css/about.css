@@ -4,11 +4,11 @@
 
 .wrapper_header {
   margin-top: 35px;
+  margin-bottom: 50px;
+  position: relative;
 }
 
-header {
-  height: 45vh;
-}
+
 
 .header_group {
   position: relative;
@@ -16,8 +16,8 @@ header {
 
 .Shapes {
   position: absolute;
-  top: 130px;
-  right: 120px;
+  top: 20px;
+  right: 0px;
 }
 
 .content {
@@ -25,7 +25,7 @@ header {
 }
 
 .wrapper-content {
-  margin-top: 180px;
+  margin-top: 120px;
   display: flex;
   justify-content: center;
 }
@@ -36,7 +36,9 @@ header {
 }
 
 .subtext-about {
-  margin: 25px 0;
+  width: 82%;
+  margin-top: 15px;
+  margin-bottom: 50px;
 }
 
 .wrap-img-about {
@@ -70,7 +72,7 @@ header {
 }
 
 .group-des {
-  width: 100%;
+  width: 80%;
 }
 
 .container {
@@ -115,13 +117,20 @@ header {
   margin-right: 30px;
 }
 
-.insta {
-  margin-top: 3px;
-}
 
 /* responsive */
-
+@media screen and (max-width: 442px){
+  .group-des h2{
+    font-size: 16px !important;
+  }
+}
 @media screen and (max-width: 780px) {
+  .content h1:first-child{
+    font-size: 20px;
+  }
+  .position{
+    font-size: 14px;
+  }
   header {
     height: auto;
   }
@@ -157,7 +166,7 @@ header {
   }
 
   .group-des h2 {
-    font-size: 15px;
+    font-size: 18px;
     width: 100%;
   }
 
@@ -188,6 +197,14 @@ header {
   .container {
     grid-template-columns: 1fr 1fr;
   }
+
+
+}
+@media screen and (max-width: 991px) {
+  .subtext-about{
+    width: 100%;
+  }
+
 
 
 }

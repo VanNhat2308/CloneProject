@@ -2,7 +2,10 @@
 @import "all.css";
 /*  */
 header{
-    height: 100vh;
+    height: 80vh;
+}
+.box-header h1:first-child{
+    margin-top: 10px;
 }
 .wrapper_header{
     margin-top: 20px;
@@ -53,7 +56,7 @@ margin-bottom: 10px;
     display: flex;
     flex-direction: column;
     width: 31%;
-    padding: 20px;
+    padding: 30px;
     background: linear-gradient(#FFFFFF, #ECEDFF);
 }
 .box-header h2{
@@ -61,6 +64,7 @@ margin-bottom: 10px;
 }
 .box-content .box-features ul li{
     list-style: none;
+    margin-bottom: 24px;
 }
 .box-content{
     display: flex;
@@ -83,68 +87,79 @@ margin-bottom: 10px;
     justify-content: center;
 }
 .subtext-boxpricing{
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 .btn-feature1{
-    padding: 10px 40px;
-    background-color: none;
+    padding: 10px 50px;
     border: 1px solid #232ED1;
     font-weight: 600;
     color: #232ED1;
-    font-size: 15px;
-    border-radius: 2px;
+    font-size: 20px;
+    border-radius: 5px;
 }
 .btn-feature2{
-    padding: 10px 40px;
+    padding: 10px 50px;
     background-color: #F24C27;
     font-weight: 600;
     color: #fff;
-    font-size: 15px;
+    font-size: 20px;
     border: none;
-    border-radius: 2px;
+    border-radius: 5px;
 }
-.list-question li {
+.title-saq {
+    margin-top: 60px;
+  }
+  
+  .SAQ {
+    width: 60%;
+  }
+  .SAQ h2:first-child{
+    margin-bottom: 50px;
+  }
+  
+  .list-question li {
     display: flex;
-    align-items: center; /* Căn giữa số thứ tự và câu hỏi */
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid #ccc;
     padding: 15px 0;
-}
-
-.number {
-    font-weight: 500;
-    font-size: 24px;
-    margin-right: 15px;
-    flex-shrink: 0; /* Đảm bảo số không bị thu nhỏ */
-}
-
-.question-container {
-    display: flex;
-    flex-direction: column;
-    flex: 1; /* Để phần nội dung chiếm toàn bộ phần còn lại */
-}
-
-.question {
-    font-weight: 500;
-    font-size: 17px;
-}
-
-.answer {
-    margin-top: 5px;
-    font-weight: 500;
-    font-size: 14px;
-    color: gray;
-}
-.list-question li:first-child .number {
-    color: #232ED1;
-}
-.SAQ{
-    width: 80%;
-}
-.wrapper-saq{
-    margin-top: -60px;
+  }
+  
+  .wrapper-saq {
+    margin-top: -240px;
     display: flex;
     justify-content: center;
-}
+  }
+  
+  .question-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .number.active {
+    color: var(--secondary-color);
+  }
+  
+  .number {
+    margin-right: 15px;
+    flex-shrink: 0;
+  }
+  
+  .question {
+    font-weight: 500;
+  }
+  .answer.active{
+    display: inline-block;
+  }
+  .answer {
+    display: none;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    color: var(--third-color);
+  }
+  
+  .wrap-list-question {
+    display: flex;
+    justify-content: center;
+  }
 
 .cus-header{
     margin-top: 70px;
@@ -161,64 +176,85 @@ margin-bottom: 10px;
 }
 
 .box-comment {
-  display: grid;
-  gap: 1.5rem; /* Khoảng cách giữa các bình luận */
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
-  padding: 2rem;
-  max-width: 1200px;
-  margin: auto;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .item {
+    background: linear-gradient(45deg,rgba(35, 46, 209, 0.2), rgba(182, 186, 255, 0.1));
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+  }
+  
+  
+  .item-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .avatar {
+    width: 5vw;
+    max-width: 40px;
+    min-width: 40px;
+    height: auto;
+    border-radius: 50%;
+  }
+  
+  
+  
+  .item-tit {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+  
+  .item-tit h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+  
+  
+  
+  .item-content p {
+    font-size: 1.6rem;
+    line-height: 1.4;
+    margin-top: 1rem;
+  }
+
+
+@media  screen and (max-width: 540px) {
+  .box-comment{
+    gap: 20px;
+    padding: 0;
+    width: 100%;
+  }
+  .item{
+    width: 100%;
+    margin-right: 0px;
+  }
+  .SAQ h2:first-child {
+    font-size:24px;
+  }
 }
 
-.item {
-  background: rgb(211, 213, 245);
-  border-radius: 10px;
-  padding: 1.5rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-
-.item-header {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-.avatar {
-  width: 5vw; /* 10% chiều rộng viewport */
-  max-width: 40px; /* Không to hơn 60px */
-  min-width: 40px; /* Không nhỏ hơn 40px */
-  height: auto; 
-  border-radius: 50%;
-}
-
-
-
-.item-tit {
-  display: flex;
-  flex-direction: column;
-  gap: 0.3rem;
-}
-
-.item-tit h2 {
-  font-size: 1.8rem;
-  font-weight: 600;
-}
-
-
-
-.item-content p {
-  font-size: 1.6rem;
-  line-height: 1.4;
-  margin-top: 1rem;
-}
-
-
-
-
-
-
-/* responsive */
-@media screen and (max-width: 768px){
- 
+  @media (max-width: 991.98px) { 
+    .box-comment{
+      width: 100%;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+    }
+  header{
+    height: auto;
+  }
+    .SAQ{
+        width: 100%;
+    }
     .subtext-header{
         width: 100%;
     }
@@ -231,7 +267,7 @@ margin-bottom: 10px;
     }
     .box-pricing{
         margin-top: 10px;
-        width: 80%;
+        width: 100%;
     }
     .title-saq{
         margin-top: 60px;
@@ -240,6 +276,9 @@ margin-bottom: 10px;
     }
     .SAQ{
         width: 80%;
+    }
+    .SAQ h2:first-child {
+        margin-bottom: 20px;
     }
     .list-question li {
         display: flex;
@@ -255,11 +294,9 @@ margin-bottom: 10px;
     .question-container {
         display: flex;
         flex-direction: column;
-        flex: 1; /* Để phần nội dung chiếm toàn bộ phần còn lại */
+        flex: 1; 
     }
-    .list-question li:first-child .number{
-        color:  var(--secondary-color);
-    }
+  
     .number {
         font-weight: 500;
         font-size: 24px;
@@ -284,33 +321,7 @@ margin-bottom: 10px;
         font-size: 20px;
         margin-top: 50px;
       }
-      .box-comment{
-        flex-direction: column;
-        align-items: center;
-        margin-top: 10px;
-      }
 
 
 
-}
-@media (max-width: 430px) {
-    header{
-        height: auto;
-    }
-    .cus-header{
-        font-size: 18px;
-      }
-      .item-content p{
-        font-size: 12px;
-      }
-      .item{
-        padding: 5px 5px;
-        width: 80%;
-      }
-    .question{
-        font-size: 12px;
-      }
-      .answer{
-        font-size: 10px;
-      }
 }
