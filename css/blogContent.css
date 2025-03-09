@@ -23,7 +23,7 @@
 }
 
 .content ul {
-    margin: 20px 0;
+    margin: 20px 35px 0 20px;
 }
 
 .image-content img {
@@ -46,9 +46,11 @@
         height: auto;
     }
 
+
     .wrapper-header {
         flex-direction: column;
         margin-top: 20px;
+        margin-bottom: 0;
     }
 
     .text-content {

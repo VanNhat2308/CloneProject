@@ -139,6 +139,7 @@ margin-bottom: 10px;
   }
   
   .number {
+    height: 100%;
     margin-right: 15px;
     flex-shrink: 0;
   }
@@ -279,12 +280,6 @@ margin-bottom: 10px;
     }
     .SAQ h2:first-child {
         margin-bottom: 20px;
-    }
-    .list-question li {
-        display: flex;
-        align-items: center; 
-        border-bottom: 1px solid gray;
-        padding: 15px 0;
     }
     .wrapper-saq{
         margin-top: 60px;

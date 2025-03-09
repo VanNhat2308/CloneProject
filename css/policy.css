@@ -34,3 +34,9 @@ header .btn-clone{
     font-size: 45px;
     font-weight: 600;
 }
+@media screen and (max-width:991px) {
+    .content{
+        width: 90%;
+    }
+    
+}
