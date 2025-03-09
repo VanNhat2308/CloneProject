@@ -1,3 +1,6 @@
+.text-content{
+  width: 57%;
+}
 .date {
   color: #232ED1;
 }
@@ -66,6 +69,15 @@ a {
 }
 }
 @media screen and (max-width: 991px) {
+  .date{
+    font-size: 14px;
+  }
+  .t4-s4{
+    font-size: 16px;
+  }
+  .feature-description{
+    font-size: 18px;
+  }
   header {
     height: auto;
   }

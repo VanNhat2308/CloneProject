@@ -145,80 +145,13 @@ margin-left: 17px;
     right:10%;
     border-bottom-left-radius: 20px;
   }
-/* responsive */
-/* @media screen and (max-width: 1224px){
-    header{
-        height: auto;
-    }
-    .text-content{
-      width: 100%;
-    }
-  .wrapper-header{
-    flex-direction: column;
-    margin-top: 20px;
-  }
-
-  .image-content img{
-    margin-top: 20px;
-  }
   .title-s1{
-    font-size: 20px;
+    width: 50%;
+    margin-top: 40px;
+    margin-bottom: 50px;
   }
-  .box h2{
-    font-size: 15px;
-  }
-
-  .feature1-s1{
-    width: 100%;
-    flex-direction: column;
-  }
-  .feature1-s1 img{
-    width: 100%;
-    height: auto;
-    margin-right: 0;
-    margin-top: 10px;
-  }
-  .t3-s1,.t2-s1{
-    width: 100%;
-  }
-  .odd{
-    flex-direction: column-reverse;
-  }
-  .t2-s1{
-    font-size: 20px;
-  }
-  .cus-header{
-    font-size: 20px;
-    margin-top: 50px;
-  }
-  .group-box{
-    flex-direction: column;
-  }
-  .group-box .box{
-    display: flex;
-    width: 100%;
-    margin-bottom: 10px;
-  }
-.icon-box{
-  margin-right: 30px;
-  width: 130px;
-}
-.wrapBox{
-  width: 100%;
-  
-}
-.box h3{
-  width: 100%;
-  margin-top: 0px;
-}
-
-.feature1-des-s1{
-  width: 100%;
-}
-
 
  
-} */
 @media (max-width: 386px) {
   .box-text-el h2{
     font-size: 14px !important;
@@ -233,15 +166,22 @@ margin-left: 17px;
 /* // Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
   .t1-s1{
-    font-size: 14px;
+    font-size: 16px;
+  }
+  .t3-s1{
+    font-size: 18px;
   }
  .t4-s1{
-  font-size: 14px;
+  font-size: 16px;
  }
+
 }
 
 /* // Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
+  .box-text-el p{
+    font-size: 16px;
+   }
   .wrapper-header{
     flex-direction: column;
     margin-top: 20px;
@@ -320,6 +260,13 @@ margin-left: 17px;
   }
   .box-text-el h2{
     font-size: 20px !important;
+  }
+  .sup{
+    margin-bottom: 15px;
+  }
+  .title-s1{
+    margin-top: 20px;
+    width: 100%;
   }
 }
 
