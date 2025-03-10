@@ -1,3 +1,42 @@
+@import 'all.css';
+.Shapes {
+  position: absolute;
+  top: 20px;
+  right: 0px;
+  display: flex;
+  flex-direction: column;
+}
+ .group-box-01{
+  display: flex;
+  align-items: end;
+ }
+.group-box-02{
+  margin-top: 20px;
+  display: flex;
+} 
+.group-box-01 .box-item-01{
+  margin-right: 15px;
+}
+.group-box-02 .box-item-02{
+  margin-right: 15px;
+}
+.box-item-01{
+  width: 75px;
+  height: 81px;
+  background-color: #F24C27;
+  border-top-left-radius: 30px;
+}
+.box-item-02{
+  width: 118px;
+  height: 120px;
+  background: var(--secondary-color);
+  border-bottom-right-radius: 30px;
+  float: left;
+}
+
+
+
+
 .subtext-header {
   width: 50rem;
 }
@@ -12,12 +51,6 @@
 
 .header_group {
   position: relative;
-}
-
-.Shapes {
-  position: absolute;
-  top: 20px;
-  right: 0px;
 }
 
 .content {
@@ -116,7 +149,10 @@
 .item a {
   margin-right: 30px;
 }
-
+.card{
+  width: 100%;
+}
+ 
 
 /* responsive */
 @media screen and (max-width: 442px){
@@ -190,19 +226,25 @@
     width: 100%;
   }
 
-  .item:first-child {
-    grid-row: auto;
+  .content  .container {
+    grid-template-columns: 1fr;
   }
-
-  .container {
-    grid-template-columns: 1fr 1fr;
-  }
-
 
 }
 @media screen and (max-width: 991px) {
+  .description-about{
+    width: 100%;
+    line-height: 1.4;
+    font-size: 20px;
+  }
+  .group-des{
+    width: 100%;
+  }
   .subtext-about{
     width: 100%;
+  }
+  .container{
+     grid-template-columns:  1fr 1fr 1fr;
   }
 
 

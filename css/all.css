@@ -6,7 +6,7 @@ html {
 
 :root {
   /* color */
-  --bg-header: #EFF0F8;
+  --bg-header: #eff0fd;
   --secondary-color: #232ED1;
   --third-color: #5b5b5b;
 
@@ -194,7 +194,7 @@ header {
 
 .wrapper-header {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   margin: 70px 0;
   background: inherit;
 }
@@ -231,7 +231,7 @@ footer {
 
 .box-header-footer {
   translate: 0 50%;
-  width: 60%;
+  width: 80%;
   background-color: #232ED1;
   padding: 70px 40px;
   position: relative;
@@ -264,6 +264,7 @@ footer {
   background-color: #F24C27;
   top: 0;
   left: -70px;
+  border-bottom-left-radius: 5px;
 }
 
 .box-blue {
@@ -273,6 +274,7 @@ footer {
   background-color: #232ED1;
   bottom: 0;
   right: -40px;
+  border-bottom-right-radius: 5px;
 
 }
 
@@ -282,6 +284,7 @@ footer {
   justify-content: center;
   width: 100%;
   background-color: #EFF0F8;
+
 }
 
 .wrap-footer {
@@ -327,7 +330,7 @@ footer {
 
 .group-nav-footer {
   margin-top: 40px;
-  width: 60%;
+  width: 80%;
   display: flex;
   justify-content: space-between;
 }
@@ -340,7 +343,7 @@ footer {
 
 .addressBox {
   margin-top: 20px;
-  width: 60%;
+  width: 80%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -353,6 +356,7 @@ footer {
 }
 
 .boxInput input {
+  border-radius: 5px;
   border: none;
   padding: 25px 25px;
   width: 100%;
@@ -406,6 +410,15 @@ footer {
 
 .group-text-nav ul li {
   margin-bottom: 20px;
+}
+@media screen and (max-width:583px) {
+  .box-orange-blog{
+    display: none;
+  }
+  .box-blue-blog{
+    display: none;
+  }
+  
 }
 
 /*navbar responsive */
@@ -484,7 +497,7 @@ footer {
   .box-orange {
     width: 20px;
     height: 20px;
-    left: -40px;
+    left: -25px;
   }
 
   .box-blue {
@@ -570,52 +583,8 @@ footer {
     margin-top: 150px;
     margin-bottom: 70px;
   }
-
-
-
-
-
-
 }
 
-
-@media (min-width: 1025px) and (max-width: 1400px) {
-  .addressBox {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-
-  .addressBox input::placeholder {
-    font-size: 10px;
-  }
-
-  .addressBox .last {
-    position: static;
-    padding: 10px 10px;
-
-  }
-
-  .boxInput {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .boxInput input::placeholder {
-    font-size: 14px;
-    font-weight: 500;
-  }
-
-  .boxInput input {
-    padding: 20px 10px;
-    width: 100%;
-    margin-top: 3px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    border: 1px solid rgb(216, 217, 227);
-  }
-}
 
 
 @media (max-width: 430px) {
@@ -655,7 +624,7 @@ footer {
   }
 
   .lables__header {
-    font-size: 25px;
+    font-size: 30px;
     font-weight: 700;
     margin: 10px 0;
   }

@@ -1,7 +1,36 @@
+@import 'all.css';
+.image-content{
+  width: 48%;
+  position: relative;
+  padding-left: 60px;
+}
+.image-content img{
+  border-radius: 10px;
+}
+.box-orange-blog{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  background: var(--secondary-color);
+  border-top-left-radius: 10px;
+}
+.box-blue-blog{
+  position: absolute;
+  background-color: #F24C27;
+  bottom: 5px;
+  right: -60px;
+  width: 40px;
+  height: 40px;
+  border-bottom-right-radius: 10px;
+}
+
 .text-content{
-  width: 57%;
+  width: 50%;
 }
 .date {
+  font-size: 14px;
   color: #232ED1;
 }
 
@@ -27,7 +56,10 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
-  gap: 10px;
+  gap: 15px
+}
+.item .card{
+  width: 100%;
 }
 
 
@@ -42,7 +74,7 @@
 }
 
 .item img {
-  width: 90%;
+  width: 100%;
 }
 
 .item h2,
@@ -121,11 +153,15 @@ a {
   .item img{
     width: 100%;
   }
-
-
-}
-@media (min-width: 992px) and (max-width: 1350px){
-  .text-content{
-    width: 70%;
+  .image-content{
+    padding-left: 0px;
+    margin-top: 20px;
+    width: 100%;
   }
+  .image-content .box-orange-blog{
+    left: -40px;
+    top: 20px;
+  }
+
+
 }

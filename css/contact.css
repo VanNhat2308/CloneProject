@@ -1,3 +1,20 @@
+.shape{
+  display: flex;
+  align-items: end;
+}
+.box-item-01{
+  margin-right: 10px;
+  width: 24px;
+  height: 24px;
+  background-color: #F24C27;
+  border-top-left-radius: 10px;
+}
+.box-item-02{
+  width: 40px;
+  height: 40px;
+  background: var(--secondary-color);
+  border-bottom-right-radius: 10px;
+}
 .sub {
   font-weight: 500;
   color: #5b5b5b;
